@@ -88,7 +88,10 @@ def rps(name='PlayerOne'):
         else:
             print("\n🎉🎉🎉")
             print("Thank you for playing!\n")
-            sys.exit(f"Bye! {name} 👋")   # End of the game
+            if __name__ == "__main__":
+                sys.exit(f"Bye! {name} 👋")   # End of the game
+            else:
+                return
         
     return play_rps
             
